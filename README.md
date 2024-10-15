@@ -40,9 +40,9 @@ The project is structured as a **monorepo** that includes both frontend and back
 - **Machine Learning**: Pre-trained models are used for incident detection and object recognition from drone footage.
 - **AI Agents**: These agents are responsible for monitoring drone activities, analyzing footage, detecting anomalies, and sending alerts to the dashboard.
 
-## General Project Roadmap
+# 📍 General Project Roadmap
 
-### Step 1: MVP Interface Creation
+### Step 1: MVP Interface Creation ![In Progress](https://img.shields.io/badge/Status-In_Progress-yellow?style=flat-square)
 - [ ] Design and implement the minimal viable product (**MVP**) of the frontend using **React** and **Tailwind CSS**.
   - Create basic components for displaying the dashboard (map, status indicators, incident list).
 
@@ -81,4 +81,3 @@ The project is structured as a **monorepo** that includes both frontend and back
 ### Step 10: Testing and Deployment
 - [ ] Perform end-to-end testing of both frontend and backend.
   - Deploy the application to a cloud platform for real-time monitoring.
-
