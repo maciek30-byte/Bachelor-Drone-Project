@@ -40,8 +40,45 @@ The project is structured as a **monorepo** that includes both frontend and back
 - **Machine Learning**: Pre-trained models are used for incident detection and object recognition from drone footage.
 - **AI Agents**: These agents are responsible for monitoring drone activities, analyzing footage, detecting anomalies, and sending alerts to the dashboard.
 
-## Setup Instructions
+## General Project Roadmap
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/drone-monitoring-system.git
+### Step 1: MVP Interface Creation
+- [ ] Design and implement the minimal viable product (**MVP**) of the frontend using **React** and **Tailwind CSS**.
+  - Create basic components for displaying the dashboard (map, status indicators, incident list).
+
+### Step 2: Backend API Setup
+- [ ] Set up the **NestJS** backend framework.
+  - Create initial endpoints for drone data, incidents, and basic status monitoring.
+
+### Step 3: Database Integration
+- [ ] Integrate **MongoDB** for storing drone position data, incident reports, and system logs.
+  - Establish data schemas for drones, incidents, and system status.
+
+### Step 4: AI Agent Initialization
+- [ ] Implement basic **AI agents** responsible for monitoring drone activities.
+  - Design core logic for incident detection using AI models.
+
+### Step 5: Real-Time Monitoring and Map Integration
+- [ ] Integrate the interactive **Mapbox** map to display real-time drone positions.
+  - Connect the map with backend data to show active drone locations.
+
+### Step 6: Image Recognition Integration
+- [ ] Set up **image recognition** capabilities to analyze static images from drones.
+  - Implement object detection models to identify incidents based on drone footage.
+
+### Step 7: Incident Detection and Reporting
+- [ ] Enhance **AI agents** to automatically detect and classify incidents.
+  - Generate real-time reports and visualize them on the dashboard.
+
+### Step 8: System Analytics and Reporting
+- [ ] Add system status analytics and trends using **D3.js** charts.
+  - Visualize drone activity over time and system performance metrics.
+
+### Step 9: Advanced AI Agent Features
+- [ ] Expand the AI agent capabilities to include drone route management and battery optimization.
+  - Implement more advanced decision-making logic for managing multiple drones.
+
+### Step 10: Testing and Deployment
+- [ ] Perform end-to-end testing of both frontend and backend.
+  - Deploy the application to a cloud platform for real-time monitoring.
+
