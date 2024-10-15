@@ -1,82 +1,83 @@
-# Adoptable
+# Drone System Monitoring  with AI Agents
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
-
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
-
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
-
-## Finish your remote caching setup
-
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/Tewh4NYRMZ)
+This project is a comprehensive **drone management system** designed to monitor drones during mass events, detect incidents, and generate reports using **AI agents**. The system provides a unified dashboard interface for drone operators, including real-time monitoring, incident tracking, and system analytics.
 
 
-## Run tasks
+![DALL·E 2024-10-15 08 43 49 - A sleek, modern dashboard design for a drone management system monitoring mass events  The layout includes a top header with a logo on the left and na](https://github.com/user-attachments/assets/26616f73-ff8c-4817-a133-05c5e9f5bdc4)
 
-To run the dev server for your app, use:
+The project is structured as a **monorepo** that includes both frontend and backend components. The backend manages drone data and incident detection, while the frontend offers an interactive user interface. AI agents are responsible for detecting incidents, managing drone routes, and handling operational tasks with minimal human intervention.
 
-```sh
-npx nx serve Drone System
-```
+## Project Overview
 
-To create a production bundle:
+### Key Features
 
-```sh
-npx nx build Drone System
-```
+- **Drone Monitoring**: Real-time drone location and status tracking on an interactive map.
+- **Incident Detection and Reporting**: AI agents automatically detect and report incidents in real-time.
+- **System Status**: Dashboard displays the current state of drones, incidents, and system performance.
+- **AI Agent Integration**: AI agents handle incident detection, route management, and report generation.
+- **Simplified UI**: Clean and user-friendly dashboard for quick access to key information.
 
-To see all available targets to run for a project, run:
+## Technologies Used
 
-```sh
-npx nx show project Drone System
-```
+### **Frontend:**
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+- **React**: JavaScript library for building dynamic user interfaces.
+- **TypeScript**: Enhances React with static typing for better code reliability.
+- **Tailwind CSS**: Utility-first CSS framework for responsive and custom styling.
+- **Mapbox**: Provides the interactive map for visualizing drone locations.
+- **D3.js**: Used for generating data visualizations (graphs, charts) in the dashboard.
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### **Backend:**
 
-## Add new projects
+- **NestJS**: A scalable Node.js framework for building efficient server-side applications.
+- **Express**: (used within NestJS) Web framework for creating the backend API to manage drone data and incidents.
+- **MongoDB**: NoSQL database for storing drone data, incidents, and system logs.
+- **AI Agents**: Custom AI agents are responsible for detecting incidents, generating reports, and managing drones in real-time.
+- **Image Recognition**: AI models process drone footage to detect objects and incidents automatically.
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+### **AI Components:**
 
-Use the plugin's generator to create new projects.
+- **Machine Learning**: Pre-trained models are used for incident detection and object recognition from drone footage.
+- **AI Agents**: These agents are responsible for monitoring drone activities, analyzing footage, detecting anomalies, and sending alerts to the dashboard.
 
-To generate a new application, use:
+# 📍 General Project Roadmap
 
-```sh
-npx nx g @nx/react:app demo
-```
+### Step 1: MVP Interface Creation ![In Progress](https://img.shields.io/badge/Status-In_Progress-yellow?style=flat-square)
+- [ ] Design and implement the minimal viable product (**MVP**) of the frontend using **React** and **Tailwind CSS**.
+  - Create basic components for displaying the dashboard (map, status indicators, incident list).
 
-To generate a new library, use:
+### Step 2: Backend API Setup
+- [ ] Set up the **NestJS** backend framework.
+  - Create initial endpoints for drone data, incidents, and basic status monitoring.
 
-```sh
-npx nx g @nx/react:lib mylib
-```
+### Step 3: Database Integration
+- [ ] Integrate **MongoDB** for storing drone position data, incident reports, and system logs.
+  - Establish data schemas for drones, incidents, and system status.
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+### Step 4: AI Agent Initialization
+- [ ] Implement basic **AI agents** responsible for monitoring drone activities.
+  - Design core logic for incident detection using AI models.
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### Step 5: Real-Time Monitoring and Map Integration
+- [ ] Integrate the interactive **Mapbox** map to display real-time drone positions.
+  - Connect the map with backend data to show active drone locations.
 
+### Step 6: Image Recognition Integration
+- [ ] Set up **image recognition** capabilities to analyze static images from drones.
+  - Implement object detection models to identify incidents based on drone footage.
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### Step 7: Incident Detection and Reporting
+- [ ] Enhance **AI agents** to automatically detect and classify incidents.
+  - Generate real-time reports and visualize them on the dashboard.
 
-## Install Nx Console
+### Step 8: System Analytics and Reporting
+- [ ] Add system status analytics and trends using **D3.js** charts.
+  - Visualize drone activity over time and system performance metrics.
 
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
+### Step 9: Advanced AI Agent Features
+- [ ] Expand the AI agent capabilities to include drone route management and battery optimization.
+  - Implement more advanced decision-making logic for managing multiple drones.
 
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### Step 10: Testing and Deployment
+- [ ] Perform end-to-end testing of both frontend and backend.
+  - Deploy the application to a cloud platform for real-time monitoring.
