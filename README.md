@@ -1,4 +1,4 @@
-# Drone System Monitoring Dashboard with AI Agents
+# Drone System Monitoring  with AI Agents
 
 This project is a comprehensive **drone management system** designed to monitor drones during mass events, detect incidents, and generate reports using **AI agents**. The system provides a unified dashboard interface for drone operators, including real-time monitoring, incident tracking, and system analytics.
 
@@ -29,19 +29,16 @@ The project is structured as a **monorepo** that includes both frontend and back
 
 ### **Backend:**
 
-- **Node.js**: JavaScript runtime environment for building the backend server.
-- **Express**: Web framework for creating the backend API to manage drone data and incidents.
+- **NestJS**: A scalable Node.js framework for building efficient server-side applications.
+- **Express**: (used within NestJS) Web framework for creating the backend API to manage drone data and incidents.
 - **MongoDB**: NoSQL database for storing drone data, incidents, and system logs.
 - **AI Agents**: Custom AI agents are responsible for detecting incidents, generating reports, and managing drones in real-time.
+- **Image Recognition**: AI models process drone footage to detect objects and incidents automatically.
 
 ### **AI Components:**
 
-- **Machine Learning**: Pre-trained models are used for incident detection based on drone data and static images.
-- **AI Agents**: These agents are responsible for monitoring drone activities, detecting anomalies, and sending alerts to the dashboard.
-  
-### **Monorepo Management:**
-
-- **Nx**: Monorepo tool used for managing both frontend and backend projects within a single repository, ensuring efficient builds, testing, and deployment.
+- **Machine Learning**: Pre-trained models are used for incident detection and object recognition from drone footage.
+- **AI Agents**: These agents are responsible for monitoring drone activities, analyzing footage, detecting anomalies, and sending alerts to the dashboard.
 
 ## Setup Instructions
 
