@@ -1,7 +1,7 @@
 {
-  "name": "Drone",
+  "name": "drone_ui",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/Drone/src",
+  "sourceRoot": "apps/drone_ui/src",
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project Drone --web",

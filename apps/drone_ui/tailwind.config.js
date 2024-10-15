@@ -11,7 +11,15 @@ module.exports = {
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#2d2d2d', // Main background color
+        secondary: '#9e9e9e', // Panel and text color
+        softBlue: '#8cc8e8', // Accent and highlight color
+        lightBlue: '#74b3e7', // Active indicator, button color
+        white: '#ffffff', // Text and elements like drones
+      },
+    },
   },
   plugins: [],
 };
