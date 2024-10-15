@@ -2,7 +2,8 @@
 
 This project is a comprehensive **drone management system** designed to monitor drones during mass events, detect incidents, and generate reports using **AI agents**. The system provides a unified dashboard interface for drone operators, including real-time monitoring, incident tracking, and system analytics.
 
-![Drone System Monitoring Dashboard](./A_sleek,_modern_dashboard_design_for_a_drone_manag.png)
+
+![DALL·E 2024-10-15 08 43 49 - A sleek, modern dashboard design for a drone management system monitoring mass events  The layout includes a top header with a logo on the left and na](https://github.com/user-attachments/assets/26616f73-ff8c-4817-a133-05c5e9f5bdc4)
 
 The project is structured as a **monorepo** that includes both frontend and backend components. The backend manages drone data and incident detection, while the frontend offers an interactive user interface. AI agents are responsible for detecting incidents, managing drone routes, and handling operational tasks with minimal human intervention.
 
