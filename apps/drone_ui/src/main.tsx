@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-
+import { StoreProvider } from '../config/providers/StoreProvider';
 import App from './app/app';
 
 const root = ReactDOM.createRoot(
@@ -8,6 +8,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <StrictMode>
+    <StoreProvider>
     <App />
+    </StoreProvider>
   </StrictMode>
 );
