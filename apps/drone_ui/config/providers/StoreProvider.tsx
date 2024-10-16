@@ -1,8 +1,12 @@
 import React from 'react';
-import { Provider } from 'react-redux';
 import { store } from '../../src/store/store';
+import { Provider } from 'react-redux';
 
 export const StoreProvider = ({ children }: { children: React.ReactNode }) => {
-  return <Provider store={store}>{children}</Provider>;
+  return (
+    <Provider store={store}>
+     {children}
+   </Provider>
+  );
 };
 

@@ -1,38 +1,30 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import styles from './Sidebar.module.css';
-import { setActiveComponent } from '../../../store/features/navigation/navigationSlice';
-import type { ActiveComponentType } from '../../../store/features/navigation/navigationSlice';
 
 const Sidebar: React.FC = () => {
-  const dispatch = useDispatch();
-
-  const handleNavigation = (component: ActiveComponentType) => {
-    dispatch(setActiveComponent(component));
-  };
-
   return (
     <nav className={styles.sidebar}>
       <ul>
         <li className={styles.menuItem}>
-          <button onClick={() => handleNavigation('Dashboard')} className={styles.link}>
+          <Link to="/dashboard" className={styles.link}>
             Dashboard
-          </button>
+          </Link>
         </li>
         <li className={styles.menuItem}>
-          <button onClick={() => handleNavigation('Drones')} className={styles.link}>
+          <Link to="/drones" className={styles.link}>
             Drones
-          </button>
+          </Link>
         </li>
         <li className={styles.menuItem}>
-          <button onClick={() => handleNavigation('Missions')} className={styles.link}>
+          <Link to="/missions" className={styles.link}>
             Missions
-          </button>
+          </Link>
         </li>
         <li className={styles.menuItem}>
-          <button onClick={() => handleNavigation('Settings')} className={styles.link}>
+          <Link to="/settings" className={styles.link}>
             Settings
-          </button>
+          </Link>
         </li>
       </ul>
     </nav>
