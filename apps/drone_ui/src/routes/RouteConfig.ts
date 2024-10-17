@@ -1,8 +1,8 @@
-type AvailablePages = 'dashboard' | 'drones' | 'missions' | 'settings';
 
-export const APP_ROUTES_PAGES: AvailablePages[] = [
+export const APP_ROUTES_PAGES = [
   'dashboard',
   'drones',
   'missions',
   'settings',
-];
+  "create-mission"
+] as const;

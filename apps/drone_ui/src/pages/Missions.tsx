@@ -1,3 +1,5 @@
-export const Missions = () => {
-  return <div>Missions</div>;
+import { MissionCreator } from '../components/MisionCreator/MisionCreator';
+
+export const MissionsLayout = () => {
+  return <MissionCreator />;
 };

@@ -7,5 +7,5 @@
 }
 
 .main {
-  @apply flex-1 p-4 bg-secondary overflow-auto;
+  @apply flex-1 p-1 bg-secondary overflow-auto;
 }

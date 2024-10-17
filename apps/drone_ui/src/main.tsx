@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <StrictMode>
     <StoreProvider>
-    <App />
+      <App />
     </StoreProvider>
   </StrictMode>
 );

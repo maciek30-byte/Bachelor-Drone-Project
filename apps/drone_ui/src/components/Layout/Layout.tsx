@@ -6,7 +6,7 @@ import Sidebar from './Sidebar/Sidebar';
 import styles from './Layout.module.css';
 import AppRoutes from '../../routes/AppRoutes';
 
-const Layout: React.FC = () => {
+const Layout = () => {
   return (
     <Router>
       <div className={styles.layout}>
